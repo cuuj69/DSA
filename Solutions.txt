@@ -1,0 +1,26 @@
+Access the response of the consultant search query and filter it to display only the available courses to the student.
+
+Provide a way for the student to select courses they are interested in and add them to a cart.
+
+Implement a cart with CRUD operations, allowing the student to view, edit, and remove items from the cart before confirming their course selection.
+Send the confirmed course selection to the backend to update the student's database.
+
+Implement robust error handling and exception handling to handle unexpected events, such as an invalid API request or unexpected data format.
+
+Implement proper authentication and authorization to ensure that only registered and verified students can access the courses.
+Consider implementing pagination if there are a large number of courses to display at once.
+
+Consider adding a way for the student to view their current course 
+
+selection.(Create a new endpoint in your backend that returns the confirmed course selection for a particular student based on their unique identifier, such as their user ID.
+
+In your frontend, make a request to this endpoint to retrieve the student's confirmed course selection.
+
+Display the confirmed course selection in a readable format, such as a list or table. You can also include additional information about each course, such as the course title, instructor, and description.)
+
+
+
+
+How to get the courses
+
+let courses = resolvedPromise[0].body.hits.hits.map(hit => hit._source.courses);
