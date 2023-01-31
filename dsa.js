@@ -32,39 +32,63 @@
 // monthly salary
 //amount spent on food and rent
 
-
-
-
-function test(){
-    let remainder = 140 // 
+// function test(){
+//     let remainder = 140 // 
     
-    let food = (1/4)
-    let rent = (1/3)
-    let transport = (1/8)
-    // console.log(rent)
+//     let food = (1/4)
+//     let rent = (1/3)
+//     let transport = (1/8)
+//     // console.log(rent)
 
-    let monthly_salary = 1
+//     let monthly_salary = 1
     
 
-    let get_monthly_salary = food + rent + transport 
+//     let get_monthly_salary = food + rent + transport 
     
-    // console.log(get_monthly_salary)
+//     // console.log(get_monthly_salary)
 
-    let remainder_fraction =  1 - get_monthly_salary
+//     let remainder_fraction =  1 - get_monthly_salary
 
-    // console.log(remainder_fraction)
+//     // console.log(remainder_fraction)
 
-    result = get_monthly_salary + remainder_fraction
+//     result = get_monthly_salary + remainder_fraction
     
-    let final_monthly_salary = result * remainder / remainder_fraction
+//     let final_monthly_salary = result * remainder / remainder_fraction
 
-    console.log((final_monthly_salary - remainder) )
+//     console.log((final_monthly_salary - remainder) )
 
 
     
 
 
 
-}
+// }
 
-(test())
+// (test())
+
+
+// function findDigits(n) {
+//     // Write your code here
+//     let accum = []
+//     let count = 0;
+//     let length = n.toString().length;
+    
+//     for(let i = 0; i < length; i++){
+//         let getDigits = n.toString().charAt(i)
+//         accum.push(parseInt(getDigits))
+//     }
+
+//     for(let j = 0;  j <accum.length; j++ ){
+//         if(n%accum[j]==0){
+//             count +=1;
+//         }
+//     }
+//     return count
+// }
+
+// console.log(findDigits(1012))
+
+
+
+
+
