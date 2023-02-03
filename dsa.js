@@ -88,29 +88,22 @@
 
 // console.log(findDigits(1012))
 
+//This is the solution to the integer squares
 
-//Integer Square
-
-// function isSquare(n) {
-    
-//     //So this breaks down the square integer using the sqrt 
-//     let root = Math.sqrt(n);
-//     //I dont really get this part
-
-//     return root === Math.floor(root) && root ** 2 === n;
-// }
+// I think they picked a cue from the keyword lower and upper boundary
 
 
-function squares(a, b) {
-    // Write your code here
-    let arr = []
-    let count = 0
-    for(let i = a; i < b+1; i++){
-        arr.push(i)
-    }
-    for(let j=1; j< arr.length; j++){
-        let root = Math.sqrt(arr[j])  
-        if(root === Math.floor(root) && root ** 2 === arr[j]){
+function squares(a,b){
+    //We need the smallest perfect square integer and largest perfect square integer in range
+    start = Math.ceil(Math.sqrt(a))
+
+    end = Math.floor(Math.sqrt(b))
+    let count = 0;
+
+    for(let i = start; i<= end; i++){
+        //It has to be in range
+        let square =  i*i
+        if(square >=a && square <=b){
             count += 1
         }
     }
@@ -118,5 +111,3 @@ function squares(a, b) {
 }
 
 console.log(squares(3,9))
-
-
