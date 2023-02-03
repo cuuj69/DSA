@@ -93,21 +93,22 @@
 // I think they picked a cue from the keyword lower and upper boundary
 
 
-function squares(a,b){
-    //We need the smallest perfect square integer and largest perfect square integer in range
-    start = Math.ceil(Math.sqrt(a))
+// Sherlock and Squares
+// function squares(a,b){
+//     //We need the smallest perfect square integer and largest perfect square integer in range
+//     start = Math.ceil(Math.sqrt(a))
 
-    end = Math.floor(Math.sqrt(b))
-    let count = 0;
+//     end = Math.floor(Math.sqrt(b))
+//     let count = 0;
 
-    for(let i = start; i<= end; i++){
-        //It has to be in range
-        let square =  i*i
-        if(square >=a && square <=b){
-            count += 1
-        }
-    }
-    return count
-}
+//     for(let i = start; i<= end; i++){
+//         //It has to be in range
+//         let square =  i*i
+//         if(square >=a && square <=b){
+//             count += 1
+//         }
+//     }
+//     return count
+// }
 
-console.log(squares(3,9))
+// console.log(squares(3,9))
